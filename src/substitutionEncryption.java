@@ -2,21 +2,22 @@ import java.util.Scanner;
 
 /**
  * @author Yong Cao
- * @version 0.1
+ * @version 0.2
  * Created by ycao on 11/11/2015.
  */
 public class substitutionEncryption {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Substitution Encryption/Decription");
-        System.out.println("V0.1 11/11/2015");
+        System.out.println("V0.2 11/11/2015");
+        System.out.println("Please enter a word or sentence to encrypt/decrypt:");
+        String str = scanner.nextLine();
         System.out.println("Please select from following options:");
         System.out.println("1 - Encrypt");
         System.out.println("2 - Decrypt");
         int selection = 0;
         selection = scanner.nextInt();
-        System.out.println("Please enter a word or sentence to encrypt/decrypt:");
-        String str = scanner.nextLine();
+
 
         //algorithm
         String plainText = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
