@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class substitutionEncryption {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to Substitution Encryption/Decription");
+        System.out.println("Welcome to Substitution Encryption/Decryption");
         System.out.println("V0.2 11/11/2015");
         System.out.println("Please enter a word or sentence to encrypt/decrypt:");
         String str = scanner.nextLine();
