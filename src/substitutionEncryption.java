@@ -15,8 +15,7 @@ public class substitutionEncryption {
         System.out.println("Please select from following options:");
         System.out.println("1 - Encrypt");
         System.out.println("2 - Decrypt");
-        int selection = 0;
-        selection = scanner.nextInt();
+        int selection = scanner.nextInt();
 
 
         //algorithm
@@ -37,9 +36,9 @@ public class substitutionEncryption {
     public static String encrypt(String strOriginal, String plainText, String cipherText){
         StringBuilder output = new StringBuilder();
         char[] letters = strOriginal.toCharArray();
-        for (int i = 0; i < letters.length; i++){
-            for (int j = 0; j < plainText.length(); j++){
-                if (letters[i] == plainText.charAt(j)){
+        for (char letter : letters) {
+            for (int j = 0; j < plainText.length(); j++) {
+                if (letter == plainText.charAt(j)) {
                     output.append(cipherText.charAt(j));
                 }
             }
@@ -50,9 +49,9 @@ public class substitutionEncryption {
     public static String decrypt(String strCipher, String cipherText, String plainText){
         StringBuilder output = new StringBuilder();
         char[] letters = strCipher.toCharArray();
-        for (int i = 0; i < letters.length; i++){
-            for (int j = 0; j < cipherText.length(); j++){
-                if (letters[i] == cipherText.charAt(j)){
+        for (char letter : letters) {
+            for (int j = 0; j < cipherText.length(); j++) {
+                if (letter == cipherText.charAt(j)) {
                     output.append(plainText.charAt(j));
                 }
             }
